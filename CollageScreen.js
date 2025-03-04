@@ -1,11 +1,15 @@
+import React from "react";
+import { View, Text, Image, StyleSheet } from "react-native";
+
 const CollageScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Photo Collage</Text>
       <View style={styles.collageContainer}>
-        <Image source={require("../assets/photos/photo1.jpg")} style={styles.image} />
-        <Image source={require("../assets/photos/photo2.jpg")} style={styles.image} />
-        <Image source={require("../assets/photos/photo3.jpg")} style={styles.image} />
+        {/* Displaying images from the root folder */}
+        <Image source={require("./photo1.jpg")} style={styles.image} />
+        <Image source={require("./photo2.jpg")} style={styles.image} />
+        <Image source={require("./photo3.jpg")} style={styles.image} />
       </View>
     </View>
   );
@@ -18,4 +22,4 @@ const styles = StyleSheet.create({
   image: { width: 100, height: 100, margin: 5, borderRadius: 10 },
 });
 
-export { HomeScreen, CollageScreen };
+export default CollageScreen;
