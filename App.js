@@ -1,12 +1,12 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import HomeScreen from "./screens/HomeScreen";
-import CollageScreen from "./screens/CollageScreen";
-import { Image, StyleSheet, View } from "react-native";
+import HomeScreen from "./HomeScreen";
+import CollageScreen from "./CollageScreen";
 
 const Stack = createStackNavigator();
 
+// Main App Component with Navigation
 export default function App() {
   return (
     <NavigationContainer>
